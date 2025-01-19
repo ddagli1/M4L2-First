@@ -49,17 +49,18 @@ def login():
         form_password = request.form['password']
         
         # Kullanıcı doğrulama
-        users_db = User.query.all()  # Veritabanındaki tüm kullanıcıları al
-        for user in users_db:
-            #Görev #4. Kullanıcıyı yetkilendir
-            #------
-                return redirect('/index')  # Giriş başarılıysa yönlendirme yap
+          
+        # Veritabanındaki tüm kullanıcıları al
         
+            #Görev #4. Kullanıcıyı yetkilendir
+            
+                  # Giriş başarılıysa yönlendirme yap
+        
+        
+    else:
         # Eğer hiçbir kullanıcı eşleşmezse hata mesajı
-        error = 'Hatalı giriş veya şifre'
-
-    # GET isteği veya başarısız POST durumunda login sayfasını render et
-    return render_template('login.html', error=error)
+       
+        # GET isteği veya başarısız POST durumunda login sayfasını render et
 
 
 
