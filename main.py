@@ -48,15 +48,18 @@ def login():
         form_login = request.form['email']
         form_password = request.form['password']
         
-       # Kullanıcı doğrulama
-        users_db = User.query.all()  # Veritabanındaki tüm kullanıcıları al
-        for user in users_db:
+        # Kullanıcı doğrulama
+          # Veritabanındaki tüm kullanıcıları al
+        
             #Görev #4. Kullanıcıyı yetkilendir
-            if 
-                 # Giriş başarılıysa yönlendirme yap
-            else:
+            
+                  # Giriş başarılıysa yönlendirme yap
+            
+                
+                
 
-		    
+    
+    return render_template('login.html')		    
           
   
 @app.route('/reg', methods=['GET','POST'])
