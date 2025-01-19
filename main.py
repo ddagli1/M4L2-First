@@ -55,12 +55,13 @@ def login():
             #Görev #4. Kullanıcıyı yetkilendir
             
                   # Giriş başarılıysa yönlendirme yap
-        
-        
+            
     else:
         # Eğer hiçbir kullanıcı eşleşmezse hata mesajı
        
         # GET isteği veya başarısız POST durumunda login sayfasını render et
+
+
 
 
 
