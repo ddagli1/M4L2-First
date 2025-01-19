@@ -48,23 +48,17 @@ def login():
         form_login = request.form['email']
         form_password = request.form['password']
         
-        # Kullanıcı doğrulama
-          
-        # Veritabanındaki tüm kullanıcıları al
-        
+       # Kullanıcı doğrulama
+        users_db = User.query.all()  # Veritabanındaki tüm kullanıcıları al
+        for user in users_db:
             #Görev #4. Kullanıcıyı yetkilendir
-            
-                  # Giriş başarılıysa yönlendirme yap
-            
-    else:
-        # Eğer hiçbir kullanıcı eşleşmezse hata mesajı
-       
-        # GET isteği veya başarısız POST durumunda login sayfasını render et
+            if 
+                 # Giriş başarılıysa yönlendirme yap
+            else:
 
-
-
-
-
+		    
+          
+  
 @app.route('/reg', methods=['GET','POST'])
 def reg():
     if request.method == 'POST':
